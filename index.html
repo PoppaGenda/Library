@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./library.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Looking to add some books?</h1>
+      <h4>Here,a solution for you:The Ecstatic Library</h4>
+    </div>
+    <div class="container">
+      <button id="open-form">+ Add Book</button>
+      <div id="form">
+        <form>
+          <label for="title">TITLE</label>
+          <input type="text" id="title" placeholder="Book Name" />
+          <label for="author">AUTHOR</label>
+          <input type="text" id="author" placeholder="Author Name" />
+          <label for="pages">PAGES</label>
+          
+          <input
+            type="text"
+            id="pages"
+            placeholder="No Of Pages"
+            pattern="[0-9]+"
+          />
+          
+          <button id="addbook">ADD BOOK</button>
+        </form>
+      </div>
+    
+    <div class="card-container">
+      <div id="cards"></div>
+    </div>
+  </div>
+  </body>
+  <script src="./library.js"></script>
+</html>
